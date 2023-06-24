@@ -1,0 +1,319 @@
+body{
+    padding:0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.833);
+    scroll-behavior: smooth;
+}
+#home{
+    z-index: 3;
+    width:100%;
+    height:10vh;
+    /* border:2px solid blue; */
+    position: relative;
+    /* margin:10px; */
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.833); */
+    
+    
+}
+#nav-logo-container{
+    width:50px;
+    height:50px;
+    /* border:2px solid red; */
+    border-radius: 50%;
+    position: absolute;
+    left:1.5%;
+    top:15%;
+}
+#nav-logo-container img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    border:2px solid grey;
+}
+#nav-list-container{
+    width:70%;
+    height:auto;
+    /* border:2px solid black; */
+    position: absolute;
+    left:25%;
+    top:5%;
+    display: flex;
+    justify-content: right;
+
+    
+}
+#nav-list-container a{
+    text-decoration: none;
+}
+#nav-list-container a li{
+    background:linear-gradient(to right,grey,lightblue);
+     list-style: none;
+     margin-right: 25px;
+     border:2px solid gray;
+     border-radius: 5px;
+     color:white;
+}
+#nav-list-container a :hover{
+    background:linear-gradient(to right,grey,lightblue);
+    
+}
+
+
+/* section */
+
+section{
+    width:100vw;
+    height:auto;
+    /* border:2px solid red; */
+    position: relative;
+    margin-bottom: 15px;
+    
+}
+
+/* about */
+#about{
+    height:100vh;
+    /* border: 2px solid blue; */
+    /* background-color: black; */
+}
+
+.about-me-container h1{
+    color:white;
+    margin-left:25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-me-container p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:20px;
+    margin-left:25px;
+}
+
+.about-me-container{
+    width:40%;
+    height:70%;
+    border:2px solid whitesmoke;
+    position:absolute;
+    left:3%;
+    top:10%;
+}
+
+.my-image-container{
+    background: url("ProfilePictureMaker\ \(1\).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:30%;
+    height:550px;
+    /* border:2px solid red; */
+    /* border-radius: 50%; */
+    position:absolute;
+    right:10%;
+    top:5%;
+}
+
+
+/* Skills */
+
+.sec-heading{
+    color:white;
+    font-size:30px;
+    /* border:2px solid salmon; */
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display: inline-block;
+    /* border-radius: 50%; */
+    padding:10px;
+    /* position: absolute;
+    top:-2%;
+    left:45%; */
+}
+#skills{
+    /* display: flex;
+    flex-direction: column; */
+    width:100vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#skill-container{
+    width:90%;
+    height:auto;
+    /* border:2px solid blue; */
+    /* position:absolute;
+    top:15%;
+    left:2%; */
+    margin:auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-left:5%; */
+}
+
+.skill-list{
+    width:28%;
+    height:80vh;
+    /* border:2px solid yellow; */
+    margin-bottom: 10px;
+    position: relative;
+    margin-left:10px;
+    margin-right:10px;
+    
+}
+
+.skill-list img{
+    width:13%;
+    height:10%;
+    position: absolute;
+    left:40%;
+    top:2%;
+}
+
+#html-logo{
+    width: 15%;
+    height:15%;
+}
+
+.skill-list p{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    color:white;
+   position: absolute;
+   top:15%;
+
+}
+
+/* Portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-container{
+    width:80%;
+    height:auto;
+    /* border:2px solid blue; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-list{
+    width:30%;
+    height:60vh;
+    /* border:2px solid pink; */
+    margin-bottom: 20px;
+}
+.project-list img{
+    width:100%;
+    height:90%;
+}
+
+.project-list button{
+    font-size:25px;
+    border-radius: 10px;
+    margin-left:35%;
+    /* margin-top:5%; */
+
+}
+.project-list button:hover{
+    cursor: pointer;
+}
+
+/* contact */
+
+#contact-container{
+    width: 80%;
+    height:500px;
+    /* border:2px solid blue; */
+    margin: auto;
+    position:relative;
+
+}
+
+.contact-details{
+    width:40%;
+    height:80%;
+    /* border:2px solid yellow; */
+    position:absolute;
+    top:10%;
+    left:5%;
+}
+
+.contact-details h1{
+    color:white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.contact-details h4 i{
+    color:rgba(164, 6, 6, 0.858);
+    margin-right:5px;
+}
+
+.contact-details h4 span{
+    margin-left:10px;
+    font-size: 18px;
+    color:white;
+}
+.social-icons{
+    width:50%;
+    height:10%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: last baseline; */
+    /* border:2px solid red; */
+}
+.social-icons li i{
+    font-size:40px;
+    /* padding:5px; */
+    margin-left:-105%;
+}
+
+.contact-form{
+    width:50%;
+    height:70%;
+    /* border:2px solid yellow; */
+    position:absolute;
+    left:47%;
+    top:10%;
+}
+
+form{
+    width:100%;
+    height:100%;
+}
+form input{
+    width:90%;
+    height:40px;
+    background-color: gray;
+    margin-bottom: 15px;
+    /* border: none; */
+}
+form textarea{
+    width:90%;
+    height:150px;
+    background-color: gray;
+}
+form button{
+    width:20%;
+    height:12%;
+    margin-left:40%;
+    margin-top: 1%;
+    background-color: salmon;
+    border-radius: 10%;
+}
+
+::placeholder{
+    color:rgb(82, 76, 76);
+    font-size:20px;
+    
+}
