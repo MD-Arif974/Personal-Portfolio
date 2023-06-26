@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding:0;
     margin: 0;
@@ -120,7 +124,7 @@ section{
 
 /* about */
 #about{
-    height:150vh;
+    height:100vh;
     /* border: 2px solid blue; */
     /* background-color: black; */
 }
@@ -140,9 +144,10 @@ section{
 }
 
 .about-me-container{
-    width:40%;
+    width:35%;
     height:70%;
-    /* border:2px solid whitesmoke; */
+    border:2px solid whitesmoke;
+    overflow: scroll;
     /* border:2px solid red; */
     position:absolute;
     left:3%;
@@ -188,6 +193,8 @@ section{
     height:auto;
     display: flex;
     flex-direction: column;
+    /* margin-top: 15%; */
+    /* border:2px solid red; */
 }
 
 #skill-container{
@@ -376,25 +383,7 @@ form button{
 
 
 /* media query  */
-@media screen and (min-width:1440px) {
-    /* #about{
-        border:2px solid green;
-        height:90vh;
-    } */
-    #skills{
-        /* border:2px solid red; */
-        margin-top:5%;
-     
-   }
-   .skill-list{
-            width:27vw;
-           height:150vh;
-           margin-bottom: 20px;
-   }
-   .skill-list p{
-     font-size:23px;
-   }
-}
+
 
 @media screen and (min-width:1024px) and (max-width:1440px)  {
 #about{
@@ -405,7 +394,11 @@ form button{
 .about-me-container {
     /* border:2px solid orange; */
     height:70vh;
-    width:60vw;
+    width:40vw;
+}
+.about-me-container h1{
+    font-weight: bolder;
+    font-size:35px;
 }
 .about-me-container p{
     font-size:21px;
@@ -413,7 +406,7 @@ form button{
 }
     #skills{
            /* border:2px solid red; */
-           margin-top:10%;
+           margin-top:5%;
         
       }
       .skill-list{
@@ -462,7 +455,7 @@ form button{
    }
    .skill-list{
             width:40vw;
-           height:110vh;
+           height:70vh;
            margin-bottom: 20px;
            overflow: scroll;
    }
@@ -534,18 +527,32 @@ form button{
 
 }
 
-@media  screen and (min-width:425px) and (max-width:768px) {
+@media  screen and (min-width:500px) and  (max-width:768px) {
     #about{
-        height:120vh;
+        height:150vh;
+        position:relative;
+        /* border:2px solid brown; */
     }
     
     .about-me-container{
-        border:2px solid pink;
-        width:60vw;
-        height:100vh;
+        /* border:2px solid yellowgreen; */
+        width:75vw;
+        height:85vh;
         overflow: scroll;
+        position: absolute;
+        top:40%;
+        left:15%;
     }
     
+    .my-image-container{
+        /* border:2px solid purple; */
+        width:40%;
+        height:30%;
+        position:absolute;
+        left:25%;
+        top:2%;
+
+    }
     #skills{
         /* border:2px solid red; */
        margin-top:10%;
@@ -623,31 +630,80 @@ form button{
       position: absolute;
       left:30%;
    }
-   nav .fa-bars{
-    display: none;
-   }
 
-   nav .fa-circle-xmark{
-    display: none;
+    #nav-list-container{
+        /* border:2px solid yellow; */
+        height:100vh;
+        margin-top:0%;
+        right:-5%;
+        background: linear-gradient(to top,rgba(255, 68, 0, 0.652),rgba(0, 0, 0, 0.683));
+    }
+
+    #nav-list-container li{
+        position:relative;
+        top:15%;
+        left:-10%;
+        padding:25px;
+        /* border:2px solid red; */
+    }
+    #nav-list-container li a{
+        padding:5px;
+        border:none;
+        width:90%;
+        position:absolute;
+        left:-1%;
+        top:20%;
+        text-align: center;
+    }
+   nav .fa-bars{
+    display: block;
    }
    
-   /* #nav-list-container{
+   nav .fa-circle-xmark:hover{
+    cursor: pointer;
+   }
+   nav .fa-circle-xmark{
+    position: absolute;
+    left:35%;
+    
+   }
+   
+   nav .fa-bars:hover{
+    cursor: pointer;
+   }
+
+    #nav-list-container{
      display: none;
-   } */
+     z-index: 4;
+   } 
 }
 
-@media screen and (min-width:300px) and (max-width:570px){
+@media screen and (max-width:500px){
     #about{
-        height:140vh;
+        height:150vh;
+        position:relative;
+        /* border:2px solid brown; */
     }
     
     .about-me-container{
-        /* border:2px solid yellow; */
-        width:60vw;
-        height:120vh;
+        /* border:2px solid brown; */
+        width:75vw;
+        height:85vh;
         overflow: scroll;
+        position: absolute;
+        top:40%;
+        left:15%;
     }
     
+    .my-image-container{
+        /* border:2px solid purple; */
+        width:40%;
+        height:30%;
+        position:absolute;
+        left:25%;
+        top:2%;
+
+    }
     #skills{
         /* border:2px solid red; */
        margin-top:10%;
@@ -682,7 +738,7 @@ form button{
   }
   .project-list{
     /* border:2px solid yellow; */
-    width:100vw;
+    width:65vw;
     height:60vh;
     margin-bottom: 35px;
   }
@@ -698,11 +754,11 @@ form button{
     margin-right:20px;
   }
   .contact-form{
-    width:60vw;
+    width:50vw;
     /* border:2px solid yellow; */
     position:absolute;
-    top:70%;
-    left:15%;
+    top:65%;
+    left:25%;
   }
   form input{
     width:100%;
@@ -720,54 +776,56 @@ form button{
    }
    
    .contact-details{
-    
+      /* border:2px solid blue; */
       width:70vw;
       position: absolute;
-      left:15%;
+      left:30%;
    }
-    nav{
-        position: relative;
+
+    #nav-list-container{
+        /* border:2px solid yellow; */
+        height:100vh;
+        margin-top:0%;
+        right:-5%;
+        background: linear-gradient(to top,rgba(255, 68, 0, 0.652),rgba(0, 0, 0, 0.683));
     }
-   #nav-list-container{
-    /* z-index: 2; */
-    width:150px;
-     /* border:2px solid yellow; */
-      display: flex;
-      position: absolute;
-      right:0%;
-      top:-25%;
-      flex-direction: column;
-      height:100vh;
-      background:linear-gradient(to right,grey,lightblue)
-   }
-   #nav-list-container li{
-    background: none;
-      border:none;
-      width:100%;
-      margin-left:-40px;
-      margin-bottom: 5px;
-      padding:5px;
-      font-size:25px;
-      position:relative;
-      top:15%;
-      
-   }
-    
-   #nav-list-container{
-    display: none;
-   }
-   nav .fa-circle-xmark:hover{
-    cursor: pointer;
-      /* display: block; */
-      /* z-index: 3; */
-   }
-    
+
+    #nav-list-container li{
+        width:100%;
+        position:relative;
+        top:15%;
+        left:-35%;
+        padding:20px;
+        /* border:2px solid red; */
+    }
+    #nav-list-container li a{
+        padding:5px;
+        border:none;
+        width:90%;
+        position:absolute;
+        left:-1%;
+        top:20%;
+        text-align: center;
+    }
    nav .fa-bars{
     display: block;
-
    }
+   
+   nav .fa-circle-xmark:hover{
+    cursor: pointer;
+   }
+   nav .fa-circle-xmark{
+       position: absolute;
+       left:35%;
+    
+   }
+   
    nav .fa-bars:hover{
     cursor: pointer;
    }
+
+    #nav-list-container{
+     display: none;
+     z-index: 4;
+   } 
 }
-/*  */
